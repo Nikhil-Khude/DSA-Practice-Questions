@@ -42,6 +42,16 @@ def solution():
                 else:
                     prev=t1
                     t1=t1.next
+        def find(self):
+            slow=self.head
+            fast=self.head
+            while(fast !=None and fast.next !=None):
+                slow=slow.next
+                fast=fast.next.next
+
+            if slow !=None:
+                print(slow.data)
+
         
 
                 
@@ -61,6 +71,7 @@ def solution():
     obj.append(30)
     obj.mid(40,20)
     obj.beg(50)
+    obj.find()
     obj.delt(50)
     obj.printsll()
 solution()
